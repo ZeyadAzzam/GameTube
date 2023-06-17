@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+/* body edit  */
+body {
+  font-family: 'Chakra Petch', sans-serif;
+ background-color: #000;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    
+  }
+/* nav edit */
+  nav {
+    background-color:#f65002;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+ 
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 85px;
+    margin-bottom: auto;
+    margin-right: 10px; 
+  }
+  .site-name {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+
+  }
+
+  /* ===============================  Edit Nav link*/ 
+.navlink a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* edit drop down games */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navlink a:hover  {
+  background-color: rgb(0, 0, 0);
+}
+/* Hove botton */
+.dropdown:hover .dropbtn {
+
+background-image: url(game.jpg);
+background-size: 100%;
+background-repeat: no-repeat;
+
+}
+/* dropdown content Edit */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f65002;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  
+ 
+  /* Edit the text */
+  .freeG-text {
+    font-size: 60px;
+    text-align: center;
+    
+  }
+/* edit the list */
+  .free-games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .free-games li {
+    flex-basis: 33.33%; 
+    max-width: 33.33%;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+    box-sizing: border-box; 
+    border: 1px solid rgb(232, 226, 236) ;
+  }
+  /* edit the img */
+  .game-img {
+    width: 80%;
+    max-height: 300px;
+    object-fit: cover;
+    border: 2px solid #606060;
+  }
+
+  .game-img:hover {
+    transform: scale(1.1);
+    
+  }
+    /*edit the title  */
+  .game-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  /* edit the description from the API */
+  .short-description {
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+  }
+
+  /* Edit the release data and platform from the API */
+  .release-date,
+  .platform,
+  .game-developer,
+  .game-genre {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  /* ======================================================================================== */
+/* Edit fight list */
+  .Fight-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .Fight-list li {
+    flex-basis: 33.33%; 
+    max-width: 33.33%;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+    box-sizing: border-box; 
+    border: 1px solid rgb(232, 226, 236) ;
+  }
+  /* Edit Shooter-list==================================== */
+
+  .Shooter-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .Shooter-list li {
+    flex-basis: 33.33%; 
+    max-width: 33.33%;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+    box-sizing: border-box; 
+    border: 1px solid rgb(232, 226, 236) ;
+  }
+  /* ============================================================== Strategy list */
+
+  .Strategy-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .Strategy-list li {
+    flex-basis: 33.33%; 
+    max-width: 33.33%;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+    box-sizing: border-box; 
+    border: 1px solid rgb(232, 226, 236) ;
+  }
+
+  /* ================================== MMO list edit */
+
+  .MMORPG-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .MMORPG-list li {
+    flex-basis: 33.33%; 
+    max-width: 33.33%;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+    box-sizing: border-box; 
+    border: 1px solid rgb(232, 226, 236) ;
+
+  }
+
+
+/* Footer */
+  footer {
+    background-color: #f65002;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    font-weight: bold;
+  }
+  
+  /* Media Qurey */
+  @media (max-width: 720px) {
+    .site-name {
+      font-size: 18px;
+    }
+  
+    .navlink a {
+      font-size: 12px;
+    }
+  
+    .freeG-text {
+      font-size: 30px;
+    }
+  
+    .game-title {
+      font-size: 14px;
+    }
+  
+    .short-description,
+    .release-date,
+    .platform,
+    .game-developer,
+    .game-genre {
+      font-size: 12px;
+    }
+  
+    .free-games {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  /* display one games on  different secreens such as mobile and phone  */
+    .free-games li {
+      flex-basis: 100%;
+      max-width: 100%;
+      padding: 5px;
+      list-style: none;
+      text-align: center;
+      box-sizing: border-box;
+      border: 1px solid rgb(232, 226, 236);
+      margin-bottom: 10px; 
+    }
+  }
+  .spinner {
+    width: 30px; /* Adjust the width as desired */
+  height: 30px; /* Adjust the height as desired */
+  animation: spinner-y0fdc1 2s infinite ease;
+  transform-style: preserve-3d;
+  margin-left: 30px;
+   }
+   
+   .spinner > div {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    border: 2px solid #ffffff;
+   }
+   
+   .spinner div:nth-of-type(1) {
+    transform: translateZ(-22px) rotateY(180deg);
+   }
+   
+   .spinner div:nth-of-type(2) {
+    transform: rotateY(-270deg) translateX(50%);
+    transform-origin: top right;
+   }
+   
+   .spinner div:nth-of-type(3) {
+    transform: rotateY(270deg) translateX(-50%);
+    transform-origin: center left;
+   }
+   
+   .spinner div:nth-of-type(4) {
+    transform: rotateX(90deg) translateY(-50%);
+    transform-origin: top center;
+   }
+   
+   .spinner div:nth-of-type(5) {
+    transform: rotateX(-90deg) translateY(50%);
+    transform-origin: bottom center;
+   }
+   
+   .spinner div:nth-of-type(6) {
+    transform: translateZ(22px);
+   }
+   
+   @keyframes spinner-y0fdc1 {
+    0% {
+     transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+    }
+   
+    50% {
+     transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+    }
+   
+    100% {
+     transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+    }
+   }

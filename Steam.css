@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+/* Body edit */
+body {
+  font-family: 'Chakra Petch', sans-serif;
+ background-color: #000;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    
+  }
+  /* nav edit */
+  nav {
+    background-color: #f65002;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 85px;
+    margin-bottom: auto;
+    margin-block-end:auto; 
+  }
+ 
+  .site-name {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+/* Nav links Edit  */
+.navigation-links {
+  list-style: none;
+  display: flex;
+  margin-left: 100px;
+}
+
+.navigation-links li {
+  margin-left: 30px;
+}
+
+.navigation-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+/*hover when the user put the pointer in the nav link */
+.navigation-links li a:hover {
+  background-color: #000000;
+}
+
+  /* Search input Edit  */
+.search-input {
+  background-color: #000;
+  max-width: 210px;
+  height: 15px;
+  padding: 10px;
+   text-align: center; 
+  border: 2px solid white;
+  border-radius: 5px;
+ 
+}
+/* focus when the user put the pointer in the Search input */
+.search-input:focus {
+  color: rgb(255, 255, 255);
+  background-color: #212121;
+  outline-color: rgb(102, 102, 102);
+  box-shadow: -3px -3px 15px rgb(102, 102, 102);
+  transition: .2s;
+  transition-property: box-shadow;
+}
+/* edit Search button */
+.search-button {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid white;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+/* edit */
+.search-button {
+  background: rgb(0, 0, 0);
+  box-shadow: 0 0 30px 5px #f65002;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+/* Edit the button before */
+.search-button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+.search-button::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+.search-button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+/* text edit */
+.Search-text {
+  font-size: 60px;
+  text-align: center;
+}
+
+  .games-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .games-list li {
+    flex-basis: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    box-sizing: border-box; 
+    border: 1px solid rgb(232, 226, 236) ;
+  }
+  /* edit the list */
+  .games-list {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .games-list a {
+    text-decoration: none;
+    color: #fafafa;
+  }
+  /* edit img from API */
+  .img {
+    height: 90px;
+    height: 150px;
+     border-radius: 5px;
+     transition: transform .2s;
+     border: 3px solid #535050;
+  }
+/* hover for the img */
+   .img:hover {
+    transform: scale(1.1);
+  }
+  /* edit title from API */
+  .game-title {
+    font-size: 18px;
+    
+  }
+  /* edit review Summary from API */
+  .review-summary {
+    font-size: 14px;
+    color: #a00808;
+    font-weight: bold;
+  }
+   
+ /* footer editing  */
+ footer {
+    background-color: #f65002;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+  
+
+  /* Media Queries to make it resposive*/
+@media (max-width: 720px)
+ {
+  .site-name {
+    font-size: 20px;
+  }
+
+  /* Nav edit */
+  .navigation-links {
+    margin-left: 0;
+  }
+
+  .navigation-links li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  /* Search input Edit */
+  .search-input {
+    width: 50%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: center;
+  }
+
+  /* text edit */
+  .Search-text {
+    font-size: 24px;
+  }
+
+  /* Edit the games list */
+  .games-list li {
+    flex-basis: 100%;
+  }
+
+  /* Edit the search button */
+  .search-button {
+    max-width: 13%;
+    width: 13%;
+    height: 7%;
+    position: absolute;
+    font-size: 10px;
+    text-align: left;
+  }
+}
+.loader {
+  display: block;
+  width: 2em; /* Adjust the width as desired */
+  height: 2em; /* Adjust the height as desired */
+  margin-left: 0.5em; /* Add margin to create space between the logo and loader */
+  overflow: visible;
+}
+.loader path.fill {
+  fill: #f65002;
+  animation: fill 4s ease-in-out infinite;
+}
+
+.loader .dash path {
+  stroke: #2AF;
+  stroke-width: 1px;
+  stroke-linecap: round;
+  animation: dashArray var(--sped, 2s) ease-in-out infinite,
+    dashOffset var(--sped, 2s) linear infinite;
+}
+
+.loader .dash path.aaa {
+  stroke-width: 2px;
+  stroke-linecap: butt;
+  clip-path: path('M 20.4603 48.5493 L 16.6461 46.9584 C 17.3209 48.3794 18.4917 49.5682 20.0447 50.2206 C 23.4007 51.6328 27.2707 50.0262 28.6694 46.6367 C 29.3464 44.9966 29.3509 43.1867 28.6806 41.5422 C 28.0103 39.8977 26.7434 38.6151 25.119 37.9315 C 23.5035 37.2544 21.7741 37.279 20.2547 37.8576 L 24.1961 39.5022 C 26.6719 40.5434 27.8427 43.4124 26.8104 45.9105 C 25.7803 48.4085 22.936 49.5905 20.4603 48.5493 Z');
+}
+
+.loader .dash path.big {
+  stroke-width: 2px;
+  filter: drop-shadow(0 0 2px #2AF);
+}
+
+@keyframes dashArray {
+  0% {
+    stroke-dasharray: 0 1 359 0;
+  }
+
+  50% {
+    stroke-dasharray: 0 359 1 0;
+  }
+
+  100% {
+    stroke-dasharray: 359 1 0 0;
+  }
+}
+
+@keyframes dashOffset {
+  0% {
+    stroke-dashoffset: -5;
+  }
+
+  100% {
+    stroke-dashoffset: -365;
+  }
+}
+
+@keyframes fill {
+  30%,
+  55% {
+    fill: #2AF0;
+  }
+}
+
+

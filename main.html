@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game News</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    
+</head>
+<body> 
+  <nav>
+    <!-- Nav logo website name etc... -->
+    <div class="logo">
+      <img src="logo.png" alt="GameTube Logo">
+      <span class="site-name">GameTube</span>
+      <div class="loader">
+        <svg viewBox="0 0 80 80">
+            <circle id="test" cx="40" cy="40" r="32"></circle>
+        </svg>
+    </div>
+    
+    <div class="loader triangle">
+        <svg viewBox="0 0 86 80">
+            <polygon points="43 8 79 72 7 72"></polygon>
+        </svg>
+    </div>
+    
+    <div class="loader">
+        <svg viewBox="0 0 80 80">
+            <rect x="8" y="8" width="64" height="64"></rect>
+        </svg>
+    </div>
+    </div>
+    
+ <!-- Nav links  -->
+    <ul class="navigation-links">
+      <li><a href="freeGames.html">Free Games</a></li>
+      <li><a href="about.html" target="_blank">About us</a></li>
+      <!-- link Div social Media -->
+      <li><a href="#" id="social-links">Contact us</a></li> 
+
+    </ul>
+   
+     <!-- Search form -->
+    <form id="search-form" class="search-form">
+      <input type="text" id="search-input" placeholder="Search for a game in steam" class="search-input" required>
+      <button type="submit" id="search-button" class="search-button">Search</button>
+    </form>
+  
+  </nav>
+
+  <!-- News container where we store the data from API and display it  -->
+    <h1 class="top10-Text"> TOP 10 NEWS</h1>
+    <div class="news-container">
+        <ul class="news-list" id="news-list"></ul> </div>
+
+       <!-- Social Media platform -->
+    <div class="social-media" id="social-media">
+      <h1>Social Media</h1>
+
+      <a href="https://www.facebook.com/Zackob69/" target="_blank"><img src="facebook.png" title="Facebook" > </a>
+      <a href="https://instagram.com/zl7d_?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><img src="instagram.jpg" title="Instagram" ></a>
+      <a href="https://discord.gg/merlin1" target="_blank"><img src="discord.png" title="Discord" ></a>
+    </div>
+
+           <!-- footer -->
+    <footer><p>&copy; 2023 GameTube . All rights reserved.</p></footer>
+    
+    <!-- Link html file with js file -->
+    <script src="main.js"></script>
+        
+</body>
+</html>
