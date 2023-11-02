@@ -153,22 +153,27 @@ body {
     list-style-type: none;
 }
 
-/* edit the list that containt the 10 news */
+/* Edit the list that contains the news */
 .news-list {
     padding: 0;
-    width: 100%; 
+    width: 100%;
     margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* This ensures 3 items per row */
 }
 
 .news-container li {
     padding-bottom: 20px;
     color: #a8a8a8;
     text-align: center;
-    width: 50%; 
-    box-sizing: border-box; 
-    padding: 0 10px; 
-    border: 1px solid rgb(232, 226, 236) ;
+    width: calc(33.33% - 20px); /* Adjust for margin/padding */
+    box-sizing: border-box;
+    border: 1px solid rgb(232, 226, 236);
+    margin-bottom: 20px; /* Spacing between rows */
+    list-style: none;
 }
+
 /* edit img from API */
 .news-img {
     max-width: 100%;
